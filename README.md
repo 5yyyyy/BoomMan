@@ -1,6 +1,6 @@
 # BoomMan
 ## 该说明仅针对此项目 此项目为手机游戏
-### Unity版本 2022.1.8  
+### Unity版本 2022.1.12  
 
 ### 关于素材处理  
 使用的素材作者为Pixel Frog 已上传文件Pirate Bomb.zip 特此感谢
