@@ -8,3 +8,7 @@ Tile-Sets中的瓦片地图配置需要更改 Sprite Mode改为Multiple多个图
 
 ### 关于地图绘制
 使用2D Tilemap绘制 按住shift快速删除图画过的模块 按B绘制Tilemap 右键2D Object创建Tilemap 需要创建Window-->2D-->Tile Palette画板使用 创建好画板新建画板存储位置 将切好的瓦片地图导入后也需要新建瓦片的存储位置后即可绘制地图 需要注意在Grid下图层的排列 可新建多个Tilemap来管理不同的图层
+
+### 关于2D Tilemap Extra
+使用2D Tilemap Extra插件快速绘制地图信息 2022版本自带此插件 以下版本需要自行下载此插件 导入插件后右键Create-->2D-->Tiles-->Rule Tile创建一个规则瓦片 拖拽一个基本信息瓦片后点击下方加号可以增加绘制规则 规则为以该瓦片为中心 可以连接其他瓦片的位置左键单击出现绿色箭头 不需要连接的地方左键双击出现红色叉 将定好规则的Rule Tile放入Tile Palette中即可按照拟定规则绘制 本项目仅制作背景和平台
+
