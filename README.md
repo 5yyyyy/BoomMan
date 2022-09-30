@@ -12,3 +12,5 @@ Tile-Sets中的瓦片地图配置需要更改 Sprite Mode改为Multiple多个图
 ### 关于2D Tilemap Extra
 使用2D Tilemap Extra插件快速绘制地图信息 2022版本自带此插件 以下版本需要自行下载此插件 导入插件后右键Create-->2D-->Tiles-->Rule Tile创建一个规则瓦片 拖拽一个基本信息瓦片后点击下方加号可以增加绘制规则 规则为以该瓦片为中心 可以连接其他瓦片的位置左键单击出现绿色箭头 不需要连接的地方左键双击出现红色叉 若需要按照相同规则时随机生成几个瓦片中的其中一个更改Single-->Random后设置需要生成的数量Size后把需要生成的瓦片拖入即可随机生成其中之一 将定好规则的Rule Tile放入Tile Palette中即可按照拟定规则绘制 本项目仅制作背景和平台
 
+### 关于地图平台碰撞体
+在平台中添加Tilemap Collider 2D碰撞体后再添加Composite Collider 2D让所有地图碰撞体连接成一个整体 否则会按照单独碰撞体作为判定 Unity会自动添加一个Rigidbody 2D刚体组件 将Body Type改为Static静止即可 否则会有物理反馈 添加后Tilemap Collider 2D勾选Used By Composite即可
