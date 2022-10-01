@@ -14,3 +14,6 @@ Tile-Sets中的瓦片地图配置需要更改 Sprite Mode改为Multiple多个图
 
 ### 关于地图平台碰撞体
 在平台中添加Tilemap Collider 2D碰撞体后再添加Composite Collider 2D让所有地图碰撞体连接成一个整体 否则会按照单独碰撞体作为判定 Unity会自动添加一个Rigidbody 2D刚体组件 将Body Type改为Static静止即可 否则会有物理反馈 添加后Tilemap Collider 2D勾选Used By Composite即可
+
+### 关于物品碰撞
+为所有物体添加了Polygon Collider 2D和RigidBody 2D来进行碰撞 可以更改RigidBody 2D中的Mess参数 调整物体质量 在物体进行碰撞时会根据质量的不同进行不同的物理反馈 更改Collision Detection为Countinues可以持续检测碰撞 所有物体的默认Layer标签是为Default 在Edit-->Project Settings->Physics 2D-->Layer Collision Matrix下可以更改物体标签的碰撞 左侧为当前物体的标签 上方是可以与该标签碰撞的标签 将所有物体作为预制体
