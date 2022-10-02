@@ -17,3 +17,6 @@ Tile-Sets中的瓦片地图配置需要更改 Sprite Mode改为Multiple多个图
 
 ### 关于物品碰撞
 为所有物体添加了Polygon Collider 2D和RigidBody 2D来进行碰撞 可以更改RigidBody 2D中的Mess参数 调整物体质量 在物体进行碰撞时会根据质量的不同进行不同的物理反馈 更改Collision Detection为Countinues可以持续检测碰撞 所有物体的默认Layer标签是为Default 在Edit-->Project Settings->Physics 2D-->Layer Collision Matrix下可以更改物体标签的碰撞 左侧为当前物体的标签 上方是可以与该标签碰撞的标签 将所有物体作为预制体
+
+### 关于人物素材处理
+人物素材像素调整为32 其他更改和素材处理相同 需要改为Point和None 添加人物层级与背景层级区分 同时添加人物碰撞层级来与场景物品不进行碰撞 同时为了保证人物不会旋转需要勾选Rigidbody 2D-->Constraints-->Freeze Rotation-->Z锁定人物Z轴旋转
