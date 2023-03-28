@@ -22,7 +22,7 @@ Tile-Sets中的瓦片地图配置需要更改 Sprite Mode改为Multiple多个图
 人物素材像素调整为32 其他更改和素材处理相同 需要改为Point和None 添加人物层级与背景层级区分 同时添加人物碰撞层级更改Layer Collision Matrix与场景物品不进行碰撞 同时为了保证人物不会旋转需要勾选Rigidbody 2D-->Constraints-->Freeze Rotation-->Z锁定人物Z轴旋转
 
 ### 关于人物控制
-通过PlayerController控制 跳跃时会改变人物重力 人物渲染图层为NPC 碰撞图层为Player 需要注意图层问题
+通过PlayerController控制 跳跃时会改变人物重力 人物渲染图层为NPC 碰撞图层为Player 需要注意图层问题 人物方向反转问题可以使用Scale改变也可以使用Rotation以及Flip 需要注意Flip物体下子集的碰撞体等不会随物体反转而反转
 
 ### 关于人物动画处理
 使用Animation处理动画 统一20帧 通过PlayerAnimation管理人物动画 JumpFX管理人物跳跃落地特效 移动和跳跃使用float控制 落下和在地上使用bool控制 需要注意特效图层问题
