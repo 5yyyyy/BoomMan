@@ -25,7 +25,7 @@ Tile-Sets中的瓦片地图配置需要更改 Sprite Mode改为Multiple多个图
 通过PlayerController控制 跳跃时会改变人物重力 人物渲染图层为NPC 碰撞图层为Player 需要注意图层问题 人物方向反转问题可以使用Scale改变也可以使用Rotation以及Flip 需要注意Flip物体下子集的碰撞体等不会随物体反转而反转
 
 ### 关于人物动画处理
-使用Animation处理动画 统一20帧 通过PlayerAnimation管理人物动画 JumpFX管理人物跳跃落地特效 移动和跳跃使用float控制 落下和在地上使用bool控制 需要注意特效图层问题
+使用Animation处理动画 统一20帧 通过PlayerAni管理人物动画 JumpFX管理人物跳跃落地特效 移动和跳跃使用float控制 落下和在地上使用bool控制 需要注意特效图层问题
 
 ### 关于炸弹
 使用计时器来判定炸弹时间 动画事件切换炸弹动画控制 使用方法模拟爆炸效果 人物放置炸弹同样使用计时器控制放置炸弹cd 需要注意炸弹图层问题
